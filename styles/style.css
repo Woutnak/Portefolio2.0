@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    /* Couleurs neutres */
+  --color-dark-gray: #0f172a;     /* slate-800/900 - textes principaux */
+  --color-medium-gray: #64748b;   /* slate-600 - textes secondaires */
+  --color-light-gray: #f1f5f9;    /* slate-50 - backgrounds subtils */
+
+  /* Couleurs d'accent */
+  --color-primary-blue: #2563eb;     /* blue-600 - couleur de marque */
+  --color-hover-blue: #1d4ed8;       /* blue-700 - hover */
+  --color-light-blue: #eff6ff;       /* blue-50 - background subtil */
+}
+
+
+body{
+    background-color: #f4f9ff;
+    font-family: sans-serif;
+}
+
+#Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f9ff;
+  position: sticky;
+  top: 0;
+  }
+
+#Navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color-dark-gray);
+}
+
+#Navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#Navbar .nav-links a {
+   color: var(--color-dark-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#Navbar .nav-links a:hover {
+  color: var(--color-hover-blue);
+}
