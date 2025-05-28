@@ -14,6 +14,13 @@
   --color-primary-blue: #2563eb;     /* blue-600 - couleur de marque */
   --color-hover-blue: #1d4ed8;       /* blue-700 - hover */
   --color-light-blue: #eff6ff;       /* blue-50 - background subtil */
+
+
+/* Couleurs spécifiques */
+--blue: #306eff; 
+--green: #00b87c; 
+--purple: #a259ff; 
+--orange: #ff7a00; 
 }
 
 
@@ -22,12 +29,16 @@ body{
     font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 #Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f4f9ff;
+  background-color: transparent;
   position: sticky;
   top: 0;
   }
@@ -53,4 +64,112 @@ body{
 
 #Navbar .nav-links a:hover {
   color: var(--color-hover-blue);
+}
+
+/*------------------*/
+#Heropage{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: #f0f4f9;
+  padding: 60px 5%;
+  margin: 0 auto;
+}
+
+.item-text h1{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  
+}
+
+.hero-tille-1{
+  color: var(--color-dark-gray);
+}
+
+.hero-tille-2{
+  color: var(--color-primary-blue);
+}
+
+.hero-tille-3{
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--color-medium-gray);
+  margin-bottom: 30px;
+
+}
+
+.subtitle{
+  width: 450px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: var(--color-medium-gray);
+
+}
+
+button{
+  border: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-approche{
+  background: var(--color-primary-blue);
+}
+
+.btn-approche a{
+  color: #f4f9ff;
+}
+
+.btn-projet{
+  background-color: #f4f9ff;
+  border: 1px solid var(--color-primary-blue);
+}
+.btn-projet a{
+color:var(--color-primary-blue);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  height: 200px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.little-card{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px; 
+}
+
+.little-card .item h4{
+  text-align: center;
+}
+.little-card:hover{
+  background-color: #FFFF;
 }
