@@ -75,6 +75,10 @@ a {
   padding: 60px 5%;
   margin: 0 auto;
 }
+.logo{
+height: 130px;
+width: auto;
+}
 
 .item-text h1{
   font-size: 3rem;
@@ -118,18 +122,43 @@ button{
 
 .btn-approche{
   background: var(--color-primary-blue);
+    border: 1px solid transparent; 
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-approche a{
-  color: #f4f9ff;
-}
-
-.btn-projet{
-  background-color: #f4f9ff;
+.btn-approche:hover{
+  background:#f4f9ff ;
   border: 1px solid var(--color-primary-blue);
 }
+.btn-approche a{
+  color: #f4f9ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-approche:hover a{
+  color: var(--color-primary-blue);
+
+}
+
+.btn-projet {
+  background-color: #f4f9ff;
+  border: 1px solid var(--color-primary-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-projet:hover {
+  border: 1px solid transparent; 
+  background-color: var(--color-primary-blue);
+}
+
+
 .btn-projet a{
 color:var(--color-primary-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-projet:hover a{
+  color: #f4f9ff;
 }
 
 .cards-grid {
@@ -144,7 +173,10 @@ color:var(--color-primary-blue);
   padding: 30px;
   height: 200px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+ 
 }
+
+
 
 .card .icon {
   font-size: 2rem;
@@ -170,6 +202,60 @@ color:var(--color-primary-blue);
 .little-card .item h4{
   text-align: center;
 }
-.little-card:hover{
+
+.little-card .item{
+  padding: 5px;
+}
+.little-card .item:hover{
   background-color: #FFFF;
+  border-radius: 5px;
+}
+
+.fa-bullseye{
+  color: var(--blue);
+}
+
+.fa-lightbulb{
+  color: var(--green);
+}
+
+.fa-bolt{
+  color: var(--purple);
+}
+
+.fa-trophy{
+  color: var(--orange);
+}
+
+.item .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.barre-haut {
+  width: 200px;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 auto 16px auto;
+   transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  
+}
+
+.card:hover .barre-haut{
+    transform: scaleX(1.2);
+
+}
+
+.barre-bleu{
+  background-color: var(--blue);
+}
+.barre-orange{
+  background-color: var(--orange);
+}
+.barre-green{
+  background-color: var(--green);
+}
+.barre-purple{
+  background-color: var(--purple);
 }
