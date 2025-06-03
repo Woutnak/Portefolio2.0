@@ -179,9 +179,9 @@ color:var(--color-primary-blue);
 
 
 
-.card .icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
+ .icon {
+  font-size: 28px;
+  margin: 10px 0;
 }
 
 .card h3 {
@@ -376,5 +376,173 @@ color:var(--color-primary-blue);
 }
 
 .cta-container button:hover {
+  background-color: var(--color-hover-blue);
+}
+
+.method-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.method-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.method-section p {
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  padding: 20px;
+  width: 250px;
+}
+
+.step-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #3b82f6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+.step-number.green {
+  background-color: #10b981;
+}
+
+.step-number.purple {
+  background-color: #8b5cf6;
+}
+
+.step-number.orange {
+  background-color: #f97316;
+}
+
+
+.step h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.step h4 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-primary-blue);
+  margin-bottom: 10px;
+}
+
+.step:nth-child(2) h4 {
+  color: var(--green);
+}
+
+.step:nth-child(3) h4 {
+  color: var(--purple);
+}
+
+.step:nth-child(4) h4 {
+  color: var(--orange);
+}
+
+.step p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*------CTA-2---*/
+.cta-2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-dark-gray);
+}
+
+.cta-2.description {
+  font-size: 16px;
+  color: var(--color-light-blue);
+  margin-bottom: 40px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+  max-width: 220px;
+}
+
+.stat-circle {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
+
+.stat-circle.blue {
+  background-color: #d8e8ff;
+  color: var(--blue);
+}
+
+.stat-circle.green {
+  background-color: #d6f5db;
+  color: var(--green);
+}
+
+.stat-circle.purple {
+  background-color: #ecdfff;
+  color: var(--purple);
+}
+
+.stat-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: var(--color-medium-gray);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: var(--color-primary-blue);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
   background-color: var(--color-hover-blue);
 }
