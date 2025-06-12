@@ -38,7 +38,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent;
+  background-color: var(--color-light-blue);
   position: sticky;
   top: 0;
   z-index: 100px;
@@ -228,6 +228,22 @@ color:var(--color-primary-blue);
   color: var(--orange);
 }
 
+.fa-list-check{
+  color: var(--blue);
+}
+.fa-laptop-code{
+  color: var(--green);
+}
+.fa-gear{
+  color: var(--orange);
+}
+.fa-person{
+  color: palevioletred;
+}
+
+.fa-circle-check{
+  color: var(--green);
+}
 .item .icon {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -545,4 +561,108 @@ color:var(--color-primary-blue);
 
 .cta-button:hover {
   background-color: var(--color-hover-blue);
+}
+
+#Services{
+  background-color: var(--color-light-blue);
+}
+.title-description{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.title-description h3{
+  color: var(--color-medium-gray);
+}
+
+.service-item{
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+  width: 350px;
+  height:250px;
+}
+.service-item h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.service-desc{
+  color: var(--color-medium-gray);
+  margin-bottom: 10px;
+
+}
+ .service-title{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+.service-container h4{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.service-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stack{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+flex-wrap: wrap;
+gap: 0.2rem;
+}
+
+.stack p{
+  background-color: var(--color-light-blue);
+  padding: 3px;
+
+}
+
+
+/*cta-3*/
+.cta-3{
+ background: linear-gradient(to right, #2563eb , #a259ff );
+}
+.cta-3 h2,
+.cta-3 p{
+  color: white;
+}
+
+.cta-3-button-1{
+  background-color: white;
+  color: var(--color-primary-blue);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+    border: solid 2px white;
+
+}
+
+.cta-3-button-1:hover{
+  background: transparent;
+  color: white;
+}
+
+.cta-3-button-2{
+   background-color: transparent;
+  color: var(--color-primary-blue);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: solid 2px white;
+  color: white;
+  transition: background 0.3s;
+}
+.cta-3-button-2:hover{
+  background: white;
+  color: var(--color-primary-blue);
 }
